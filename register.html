@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page-body">
+
+    <!-- Navbar Matching Index Page -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo"><i class="fa-solid fa-fire"></i>HotStuff</div>
+        </div>
+    </header>
+
+    <!-- Main Auth Card -->
+    <main class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Tạo tài khoản</h2>
+            </div>
+
+            <div id="auth-error-msg" class="auth-error hidden"></div>
+
+            <form id="standalone-register-form" class="auth-form">
+                <div class="form-group">
+                    <label for="reg-name">Full Name</label>
+                    <input type="text" id="reg-name" class="modal-input" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" class="modal-input" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="reg-pass">Password</label>
+                    <input type="password" id="reg-pass" class="modal-input" placeholder="••••••••" required minlength="6">
+                </div>
+                <button type="submit" class="btn btn-success auth-submit-btn">Create Account</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </main>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <!-- Section 1: Brand & Bio -->
+        <div class="footer-section brand-section">
+            <div class="footer-logo">
+                <i class="fa-solid fa-fire"></i> HotStuff
+            </div>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <!-- Section 2: Popular Categories -->
+        <div class="footer-section">
+            <h3>Danh Mục Phổ Biến</h3>
+            <ul>
+                <li><a href="#" onclick="fetchExternalRecipes('Chicken'); return false;">Món Gà</a></li>
+                <li><a href="#" onclick="fetchExternalRecipes('Beef'); return false;">Món Bò</a></li>
+                <li><a href="#" onclick="fetchExternalRecipes('Pasta'); return false;">Mỳ Ý & Pasta</a></li>
+                <li><a href="#" onclick="fetchExternalRecipes('Dessert'); return false;">Món Tráng Miệng</a></li>
+                <li><a href="#" onclick="fetchExternalRecipes('Seafood'); return false;">Hải Sản</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Quick Links -->
+        <div class="footer-section">
+            <h3>Khám Phá</h3>
+            <ul>
+                <li><a href="/page/welcome.html">Giới Thiệu</a></li>
+                <li><a href="#">Điều Khoản Sử Dụng</a></li>
+                <li><a href="#">Chính Sách Bảo Mật</a></li>
+                <li><a href="#">Hợp Tác & Quảng Cáo</a></li>
+                <li><a href="#">Liên Hệ & Hỗ Trợ</a></li>
+            </ul>
+        </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2026 HotStuff. Tất cả quyền được bảo lưu.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Quyền Riêng Tư</a> &bull; 
+                <a href="#">Điều Khoản</a> &bull; 
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script type="module" src="../js/auth.js"></script>
+</body>
+</html>
