@@ -1,4 +1,4 @@
-<img width="220" height="136" alt="image" src="https://github.com/user-attachments/assets/1a04f93d-041d-493a-8d04-d5693798773b" /># HotStuff
+# HotStuff
 
 HotStuff là một nền tảng web hiện đại giúp người dùng dễ dàng tìm kiếm cảm hứng ẩm thực, lưu trữ sổ tay nấu ăn kỹ thuật số cá nhân và học hỏi qua các video hướng dẫn trực quan.
 
